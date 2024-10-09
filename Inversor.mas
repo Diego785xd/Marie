@@ -1,0 +1,56 @@
+/Programa que llena cuatro espacios de memoria y los invierte
+
+llenar, input 
+        StoreI loc
+        load loc
+        add uno
+
+        store loc
+
+        load cuatro
+        Subt uno
+
+        Store cuatro
+
+        Skipcond 400
+        Jump llenar
+
+load loc
+subt uno
+Store loc
+
+inv, 	loadi loc2
+		store temp
+        loadi loc
+        
+        StoreI loc2        
+        load temp
+        storei loc
+        
+     	load loc2
+        add uno
+        store loc2
+        
+        load loc
+        subt uno
+        store loc
+        
+        load dos
+        subt uno
+        store dos
+
+        
+        Skipcond 400
+        Jump inv
+
+
+Halt
+
+
+
+uno, DEC 1
+dos, DEC 2
+cuatro, DEC 4
+loc, HEX 30
+loc2, HEX 30
+temp, DEC 0
