@@ -1,0 +1,35 @@
+/Código de operaciones sumadores y multiplicadores con Loop
+
+
+Clear
+Store result
+Input 
+Store  X
+Input
+Add  X
+Store C
+
+
+loop, 	Load result
+		Add  C
+        Store  result
+
+        
+        Load five
+        Subt  one
+        Store five
+        
+        Skipcond 400
+        Jump  loop
+
+Load result
+Output
+Halt
+
+X, DEC 0
+C, DEC 0
+one, DEC 1
+five, DEC 5
+result, DEC 0
+
+/5*(x+y)
